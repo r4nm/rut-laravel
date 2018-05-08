@@ -29,7 +29,7 @@ class Rut {
      *
      * @param rut  Rut sin puntos ni guion
      *
-     * @return  Verdadero si el rut es correcto
+     * @return     Verdadero si el rut es correcto
      */
     public static function isValid($rut) {
         if (static::checkSyntax($rut, static::$RUT_REGEX) === false) {
@@ -50,7 +50,7 @@ class Rut {
      *
      * @param rut  Numero del Rut
      *
-     * @return  El digito verificador
+     * @return     El digito verificador
      *
      */
     public static function calcCheckDigit($rutNumber) {
@@ -74,7 +74,7 @@ class Rut {
      *
      * @param rut  Rut
      *
-     * @return  El digito verificador
+     * @return     El rut con formato
      *
      */
     public static function format($rut) {
@@ -91,8 +91,7 @@ class Rut {
      * @param rut      Rut o Numero del Rut
      * @param pattern  El patron de verificacion de sintaxis
      *
-     * @return
-     *      Verdadero si la sintaxis es correcta
+     * @return         Verdadero si la sintaxis es correcta
      *
      */
     private static function checkSyntax($rut, $pattern) {
