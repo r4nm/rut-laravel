@@ -1,7 +1,6 @@
 <h2>Configuración</h2>
 
 <b>composer.json</b>
-
 <pre>
 ...
 "autoload": {
@@ -36,13 +35,12 @@
 </pre>
 
 <h2>Ejemplos</h2>
+
 <pre>
     <h4>Validación de un rut</h4>
-    <code>Rut::isValid('999999999'); /* true */</code>
-
+    Rut::isValid('999999999');          /* true */
     <h4>Calcular digito verificador</h4>
     Rut::calcCheckDigit('99999999');    /* 9 */
-
     <h4>Dar formato al rut</h4>
     Rut::format('999999999');           /* 99.999.999-9 */
 </pre>
