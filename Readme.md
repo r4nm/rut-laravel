@@ -1,6 +1,4 @@
-<html>
-    <body>
-        <pre>
+<pre>
 <b>composer.json</b>
             
 ...
@@ -27,7 +25,4 @@
     'Rut' => Rnm\Facades\Rut::class,
     ...
 ];
-
-        </pre>
-    </body>
-</html>
+</pre>
