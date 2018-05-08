@@ -1,0 +1,23 @@
+composer.json
+
+"autoload": {
+        ...
+        "psr-4": {
+            "Rnm\\": "vendor/rnm/src/"
+        }
+        ...
+        
+config/app.php
+
+...
+'providers' => [
+    ...
+    Rnm\Providers\Rut::class,
+    ...
+];
+
+'aliases' => [
+    ...
+    'Rut' => Rnm\Facades\Rut::class,
+    ...
+];
