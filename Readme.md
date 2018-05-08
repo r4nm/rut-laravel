@@ -1,8 +1,8 @@
 <h2>Configuración</h2>
 
-<pre>
 <b>composer.json</b>
-            
+
+<pre>
 ...
 "autoload": {
     ...
@@ -12,9 +12,10 @@
     ...
 }
 ...
+</pre>
 
 <b>config/app.php</b>
-
+<pre>
 ...
 'providers' => [
     ...
@@ -30,5 +31,6 @@
 </pre>
 
 <b>En linea de comandos</b>
-
+<pre>
 #composer dump-autoload
+</pre>
