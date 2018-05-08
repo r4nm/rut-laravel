@@ -5,7 +5,7 @@
 "autoload": {
     ...
     "psr-4": {
-        "Rnm\\\\": "vendor/rnm/src/"
+        "Rnm\\": "vendor/rnm/src/"
     }
     ...
 }
