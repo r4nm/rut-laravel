@@ -26,3 +26,7 @@
     ...
 ];
 </pre>
+
+<b>En linea de comandos</b>
+
+#composer dump-autoload
