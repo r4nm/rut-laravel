@@ -38,9 +38,9 @@
 
 <pre>
     <h4>Validación de un rut</h4>
-    Rut::isValid('999999999');          /* true */
+    \Rut::isValid('999999999');          /* true */
     <h4>Calcular digito verificador</h4>
-    Rut::calcCheckDigit('99999999');    /* 9 */
+    \Rut::calcCheckDigit('99999999');    /* 9 */
     <h4>Dar formato al rut</h4>
-    Rut::format('999999999');           /* 99.999.999-9 */
+    \Rut::format('999999999');           /* 99.999.999-9 */
 </pre>
