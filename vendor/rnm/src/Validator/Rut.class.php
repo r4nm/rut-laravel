@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-namespace Rnm;
+namespace Rnm\Validator;
 
 class Rut {
     private static $RUT_REGEX = "/^(\d{1,8})([\dk])$/i";
