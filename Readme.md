@@ -4,23 +4,23 @@ composer.json<br>
 "autoload": {<br>
         ...<br>
         "psr-4": {<br>
-            "Rnm\\\\": "vendor/rnm/src/"
-        }
-        ...
-    }
-...
+            "Rnm\\\\": "vendor/rnm/src/"<br>
+        }<br>
+        ...<br>
+    }<br>
+...<br>
         
-config/app.php
+config/app.php<br>
+<br>
+...<br>
+'providers' => [<br>
+    ...<br>
+    Rnm\Providers\Rut::class,<br>
+    ...<br>
+];<br>
 
-...
-'providers' => [
-    ...
-    Rnm\Providers\Rut::class,
-    ...
-];
-
-'aliases' => [
-    ...
-    'Rut' => Rnm\Facades\Rut::class,
-    ...
-];
+'aliases' => [<br>
+    ...<br>
+    'Rut' => Rnm\Facades\Rut::class,<br>
+    ...<br>
+];<br>
