@@ -36,9 +36,9 @@ class Rut {
             return false;
         }
 
-        $rut = strtolower(str_pad($rut, array_count(static::$matrix), '0', STR_PAD_LEFT));
+        $rut = strtolower(str_pad($rut, count(static::$matrix), '0', STR_PAD_LEFT));
 
-        for ($i = 0, $sum = 0; $i < array_count(static::$matrix); $i++) {
+        for ($i = 0, $sum = 0; $i < count(static::$matrix); $i++) {
             $sum += ($rut[$i] == 'k' ? 10 : $rut[$i]) * static::$matrix[$i];
         }
 
@@ -54,15 +54,15 @@ class Rut {
      *
      */
     public static function calcCheckDigit($rutNumber) {
-        $matrix = array_slice(static::$matrix, 0, array_count(static::$matrix) - 1);
+        $matrix = array_slice(static::$matrix, 0, count(static::$matrix) - 1);
 
         if (static::checkSyntax($rutNumber, static::$RUT_NUMBER_REGEX) === false) {
             return false;
         }
 
-        $rutNumber = str_pad($rutNumber, array_count($matrix), '0', STR_PAD_LEFT);
+        $rutNumber = str_pad($rutNumber, count($matrix), '0', STR_PAD_LEFT);
 
-        for ($i = 0, $sum = 0; $i < array_count($matrix); $i++) {
+        for ($i = 0, $sum = 0; $i < count($matrix); $i++) {
             $sum += @$rutNumber[$i] * $matrix[$i];
         }
 
