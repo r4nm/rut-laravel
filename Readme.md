@@ -37,12 +37,12 @@
 
 <h2>Ejemplo</h2>
 <pre>
-    /* Validación del rut */
+    <h5>Validación de un rut</h5>
     Rut::isValid('999999999');          /* true */
     
-    /* Calcular digito verificador */
+    <h5>Calcular digito verificador</h5>
     Rut::calcCheckDigit('99999999');    /* 9 */
     
-    /* Dar formato al rut */
+    <h5>Dar formato al rut</h5>
     Rut::format('999999999');           /* 99.999.999-9 */
 </pre>
