@@ -35,7 +35,7 @@ class Rut extends ServiceProvider {
      */
     public function register() {
         \App::bind('rut', function() {
-            return new \Rnm\Rut();
+            return new \Rnm\Validator\Rut();
         });
     }
 }
