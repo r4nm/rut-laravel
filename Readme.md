@@ -1,6 +1,6 @@
 <pre>
 
-<h5>Configuracion</b>
+<h5>Configuracion</h5>
 
 <b>composer.json</b>
             
