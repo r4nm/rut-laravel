@@ -35,14 +35,14 @@
 #composer dump-autoload
 </pre>
 
-<h2>Ejemplo</h2>
+<h2>Ejemplos</h2>
 <pre>
-    <h5>Validación de un rut</h5>
-    Rut::isValid('999999999');          /* true */
-    
-    <h5>Calcular digito verificador</h5>
+    <h4>Validación de un rut</h4>
+    <code>Rut::isValid('999999999'); /* true */</code>
+
+    <h4>Calcular digito verificador</h4>
     Rut::calcCheckDigit('99999999');    /* 9 */
-    
-    <h5>Dar formato al rut</h5>
+
+    <h4>Dar formato al rut</h4>
     Rut::format('999999999');           /* 99.999.999-9 */
 </pre>
