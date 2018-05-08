@@ -1,7 +1,6 @@
+<h2>Configuración</h2>
+
 <pre>
-
-<h2>Configuracion</h2>
-
 <b>composer.json</b>
             
 ...
