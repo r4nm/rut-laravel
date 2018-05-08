@@ -1,11 +1,14 @@
-composer.json
-
-"autoload": {
+composer.json\n
+\n
+...
+"autoload": {\n
         ...
         "psr-4": {
             "Rnm\\\\": "vendor/rnm/src/"
         }
         ...
+    }
+...
         
 config/app.php
 
