@@ -1,9 +1,9 @@
-composer.json
-
-...
-"autoload": {
-        ...
-        "psr-4": {
+composer.json<br>
+<br>
+...<br>
+"autoload": {<br>
+        ...<br>
+        "psr-4": {<br>
             "Rnm\\\\": "vendor/rnm/src/"
         }
         ...
